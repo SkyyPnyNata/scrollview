@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  background-image:  url(download.jpg);
+}
+
+.scroll-container {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 2px solid #ccc;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Confetti Canvas Fullscreen */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}

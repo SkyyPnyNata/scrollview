@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Card Scroll View</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-container">
+  <img src="Picsart_24-11-15_19-03-12-917.png" alt="Birthday Card">
+</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas"></canvas>
+
+<!-- Audio Element -->
+<audio id="background-audio" autoplay loop>
+  <source src="play.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script src="confetti.js"></script>
+<script>
+  // Start confetti animation on page load
+  window.onload = function() {
+    startConfetti();
+  };
+</script>
+
+</body>
+</html>
